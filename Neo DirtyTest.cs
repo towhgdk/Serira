@@ -187,7 +187,7 @@ namespace WindowsFormsApp1
         private void buttonSaveGraph_Click(object sender, EventArgs e)
         {
             SaveFileDialog s = new SaveFileDialog { Filter = "PNG|*.png", FileName = $"Result_{DateTime.Now:HHmmss}.png" };
-            if (s.ShowDialog() == DialogResult.OK) { formsPlot1.Plot.SavePng(s.FileName, 1920, 1080); MessageBox.Show("FHD 저장 완료!"); }
+            if (s.ShowDialog() == DialogResult.OK) { formsPlot1.Plot.SavePng(s.FileName, 1920, 1080); MessageBox.Show("고화질로 저장 완료!"); }
         }
 
         private void radioButtonRead_CheckedChanged(object sender, EventArgs e)
